@@ -105,16 +105,16 @@ const disciplineQuotes = [
     author:' — Mike Tyson'
 }
 ];
-let random;
+let randomDicsipline,randomHardwork,randomMotivation;
 
 let disciplineQuotesFunction = () => {
     document.querySelector('#quotes-title').innerText = 'Discipline Quotes';
     document.querySelector('#a-quote').innerText = disciplineQuotes[disciplineQuotes.length-1].quote;
     document.querySelector('#author').innerText = disciplineQuotes[disciplineQuotes.length-1].author;
     if (document.querySelector('button').addEventListener('click',() => {
-        random = Math.floor(Math.random()*disciplineQuotes.length);
-        document.querySelector('#a-quote').innerText = disciplineQuotes[random].quote;
-        document.querySelector('#author').innerText = disciplineQuotes[random].author;
+        randomDiscipline = Math.floor(Math.random()*disciplineQuotes.length);
+        document.querySelector('#a-quote').innerText = disciplineQuotes[randomDiscipline].quote;
+        document.querySelector('#author').innerText = disciplineQuotes[randomDiscipline].author;
         document.querySelector('.my-buttons').style.backgroundColor = 'aliceblue';
     }));
 }
@@ -143,9 +143,9 @@ let HardWorkQuotesFunction = () => {
     document.querySelector('#a-quote').innerText = hardworkQuotes[0].quote;
     document.querySelector('#author').innerText = hardworkQuotes[0].author;
     document.querySelector('button').addEventListener('click',() => {
-        random = Math.floor(Math.random()*hardworkQuotes.length);
-        document.querySelector('#a-quote').innerText = hardworkQuotes[random].quote;
-        document.querySelector('#author').innerText = hardworkQuotes[random].author;
+        randomHardwork = Math.floor(Math.random()*hardworkQuotes.length);
+        document.querySelector('#a-quote').innerText = hardworkQuotes[randomHardwork].quote;
+        document.querySelector('#author').innerText = hardworkQuotes[randomHardwork].author;
         document.querySelector('.my-buttons').style.backgroundColor = 'aliceblue';
     });
 }
@@ -154,9 +154,9 @@ let motivationalQuotesFunction = () => {
     document.querySelector('#a-quote').innerText = motivationalQuotes[motivationalQuotes.length-1].quote;
     document.querySelector('#author').innerText = motivationalQuotes[motivationalQuotes.length-1].author;
     document.querySelector('.my-buttons').addEventListener('click', () => {
-        random = Math.floor(Math.random()*motivationalQuotes.length);
-        document.querySelector('#a-quote').innerText = motivationalQuotes[random].quote;
-        document.querySelector('#author').innerText = motivationalQuotes[random].author;
+        randomMotivation = Math.floor(Math.random()*motivationalQuotes.length);
+        document.querySelector('#a-quote').innerText = motivationalQuotes[randomMotivation].quote;
+        document.querySelector('#author').innerText = motivationalQuotes[randomMotivation].author;
         document.querySelector('.my-buttons').style.backgroundColor = 'aliceblue';
 });
 }
