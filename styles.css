@@ -2,6 +2,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 body {
     height: 100vh;
@@ -20,6 +21,23 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap:1rem;
+}
+#js-title {
+    background-color: rgba(81, 196, 241);
+    width: 100%;
+    text-align: center;
+    padding:.8rem 0;
+    transform: translateY(-500%);
+    animation: js-title 5000ms forwards;
+}
+.animation-paused {
+    animation-play-state: paused !important;
+}
+@keyframes js-title {
+    to {
+        transform: translateX(0);
+    }
 }
 .fa {
     position: absolute;
@@ -100,6 +118,9 @@ article {
     }
 }
 @media(width<400px) {
+    #js-title {
+        font-size:2rem;
+    }
     .fa {
         font-size: 2rem;
     }
