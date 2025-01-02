@@ -67,7 +67,6 @@ ul {
 }
 button {
     border: none;
-    border-radius: 2rem;
     padding:.5rem;
     font-size: 1rem;
     transition: background-color 300ms,color 300ms;

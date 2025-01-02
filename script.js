@@ -115,6 +115,7 @@ let disciplineQuotesFunction = () => {
         random = Math.floor(Math.random()*disciplineQuotes.length);
         document.querySelector('#a-quote').innerText = disciplineQuotes[random].quote;
         document.querySelector('#author').innerText = disciplineQuotes[random].author;
+        document.querySelector('.my-buttons').style.backgroundColor = 'aliceblue';
     }));
 }
 disciplineQuotesFunction();
@@ -145,6 +146,7 @@ let HardWorkQuotesFunction = () => {
         random = Math.floor(Math.random()*hardworkQuotes.length);
         document.querySelector('#a-quote').innerText = hardworkQuotes[random].quote;
         document.querySelector('#author').innerText = hardworkQuotes[random].author;
+        document.querySelector('.my-buttons').style.backgroundColor = 'aliceblue';
     });
 }
 let motivationalQuotesFunction = () => {
@@ -155,6 +157,7 @@ let motivationalQuotesFunction = () => {
         random = Math.floor(Math.random()*motivationalQuotes.length);
         document.querySelector('#a-quote').innerText = motivationalQuotes[random].quote;
         document.querySelector('#author').innerText = motivationalQuotes[random].author;
+        document.querySelector('.my-buttons').style.backgroundColor = 'aliceblue';
 });
 }
 let quotesList = () => {
