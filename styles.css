@@ -24,15 +24,12 @@ main {
     gap:1rem;
 }
 #js-title {
-    background-color: rgba(81, 196, 241);
+    background-color: rgba(81, 196, 241,0.756);
     width: 100%;
     text-align: center;
     padding:.8rem 0;
     transform: translateY(-500%);
-    animation: js-title 5000ms forwards;
-}
-.animation-paused {
-    animation-play-state: paused !important;
+    animation: js-title 5000ms 3000ms forwards;
 }
 @keyframes js-title {
     to {

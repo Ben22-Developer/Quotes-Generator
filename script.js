@@ -161,10 +161,6 @@ let motivationalQuotesFunction = () => {
 });
 }
 let quotesList = () => {
-    if (document.querySelector('#js-title').classList.contains('animation-paused')) {
-        document.querySelector('#js-title').classList.remove('animation-paused');
-        console.log(document.querySelector('#js-title'));
-    }
     if (document.querySelector('ul').classList.contains('hidden')) {
         document.querySelector('ul').classList.remove('hidden');
         document.querySelector('ul').addEventListener('click',choiceOfQuotes);
